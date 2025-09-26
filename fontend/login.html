@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="img/favicon-16x16-removebg-preview.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Login</title>
 </head>
@@ -14,8 +14,11 @@
         <img src="img/Cute_Anime_Chibi-removebg-preview.png">
         <h1>Welcome Back Fellow Otaku</h1>
     <form>
-        <input type="text" id="name" placeholder="Enter Username or password">
-        <input type="text" id="email" placeholder="Enter password">
+        <input type="text" id="name" placeholder="Enter Username or email">
+        <div class="password-container">
+            <input type="password" id="password" placeholder="Enter Password">
+            <span class="toggle-password" onclick="togglePassword('password')">👁️</span>
+            </div>
         <button type="submit" class="but">Login</button>
     </form>
     </div>

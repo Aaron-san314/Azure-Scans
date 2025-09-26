@@ -9,5 +9,23 @@ function includeHTML() {
             });
     });
 }
+function togglePassword(id) {
+    const passwordField = document.getElementById(id);
+    passwordField.type = passwordField.type === "password" ? "text" : "password";
+}
+//password validation
+const form = document.getElementById("signup-form");
+const password = document.getElementById("password");
+const confirmPassword = document.getElementById("passConfirm");
+const errorMessage = document.getElementById("pwwarning");
 
+form.addEventListener("submit", function(event){
+    event.preventDefault();
+    if (password.value !== confirmPassword.value){
+        errorMessage.style.display = "block"; //show error
+    }else{
+        errorMessage.style.display = "none"; //doesn't show error
+        alert("signup Successful");
+    }
+});
 window.addEventListener('DOMContentLoaded', includeHTML);

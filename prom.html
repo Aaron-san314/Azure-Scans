@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="script" href="st.js">
+    <title>example</title>
+</head>
+<body>
+    <form id="signup-form">
+  <label>Password:</label>
+  <input type="password" id="password" required>
+  <br><br>
+
+  <label>Confirm Password:</label>
+  <input type="password" id="passConfirm" required>
+  <br><br>
+
+  <!-- Live feedback -->
+  <p id="pwwaring" style="display:none; color:red;">❌ Passwords do not match!</p>
+  <p id="pwmatch" style="display:none; color:green;">✅ Passwords match!</p>
+
+  <button type="submit">Sign Up</button>
+</form>
+
+</body>
+</html>

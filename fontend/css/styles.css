@@ -1,5 +1,5 @@
 body{
-    background-image: url(img/coolbackground.jpg);
+    background-image: url(../img/coolbackground.jpg);
     background-size:cover;
     background-repeat:no-repeat;
     background-position:center;
@@ -87,4 +87,23 @@ nav a{
      display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+.password-container{
+    position:relative;
+    width:100%;
+    margin-bottom:15px;
+}
+.password-container input{
+    width: 100%;
+}
+.toggle-password{
+position:absolute;
+top:50%;
+right: 10%;
+transform: translateY(-50%);
+cursor: pointer;
+}
+#pwwarning{
+    color:red;
+    display:none;
 }
