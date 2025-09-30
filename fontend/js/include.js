@@ -6,8 +6,17 @@ function includeHTML() {
             .then(res => res.text())
             .then(data => {
                 el.innerHTML = data;
+                adjustNavbar();
             });
     });
+}
+function adjustNavbar(){
+    const path = window.location.pathname;
+    if (path.includes("login")){
+        document.getElementById("nav-login").style.display = "none";
+    }else if (path.includes("signup")){
+        document.getElementById("nav-signup").style.display = "none";
+    }
 }
 function togglePassword(id) {
     const passwordField = document.getElementById(id);
