@@ -103,7 +103,17 @@ right: 10%;
 transform: translateY(-50%);
 cursor: pointer;
 }
-#pwwarning{
+#pwwarning, #passwordError{
     color:red;
     display:none;
+    font-family:bold;
+    margin-top:5px;
+    height:20px;
+}
+input:invalid{
+    box-shadow:none;
+    outline:none;
+}
+input{
+    box-sizing:border-box;
 }
